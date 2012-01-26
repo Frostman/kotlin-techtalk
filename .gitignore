@@ -1,0 +1,9 @@
+*.ipr
+*.iml
+*.iws
+.idea
+lib
+stdlib
+out
+target
+tmp
