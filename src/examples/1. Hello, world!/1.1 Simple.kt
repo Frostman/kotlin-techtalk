@@ -4,6 +4,6 @@ fun main(args : Array<String>) : Unit {
     println("Hello, World!");
 }
 
-fun println(str : String) /* : Unit */ {
-    System.out?.println(str);
+fun println(any : Any?) /* : Unit */ {
+    System.out?.println(any);
 }

@@ -4,6 +4,8 @@ fun main(args : Array<String>) {
 
     var x = #(1, 2, 3)
 
+    println(x)
+
     when(x) {
         //is #(*, 2, val c) -> println("c=" + c)  //unsupported yet
         null -> println("null")
@@ -17,6 +19,6 @@ fun main(args : Array<String>) {
 
 }
 
-fun println(str : String) {
-    System.out?.println(str);
+fun println(any : Any?) {
+    System.out?.println(any);
 }

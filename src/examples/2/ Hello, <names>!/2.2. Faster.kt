@@ -10,16 +10,16 @@ fun main(args : Array<String>) {
         }
     }
 
-    println("Hello, $names!") // Groovy-style
+    println("Hello, $names!") // Groovy-style templates
 }
 
-fun StringBuilder.plusAssign(str : String) {
-    this.append(str)
+fun StringBuilder.plusAssign(any : Any?) {
+    this.append(any)
 }
 
 val Array<*>.indices : Iterable<Int>
-get() = IntRange(0, size - 1)
+                get() = IntRange(0, size - 1)
 
-fun println(str : String) {
-    System.out?.println(str);
+fun println(any : Any?) {
+    System.out?.println(any);
 }
