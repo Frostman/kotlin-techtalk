@@ -12,7 +12,7 @@ fun <T> Iterable<T>.join(separator : String) : String {
             names += separator
     }
 
-    return names.toString()?:""
+    return names.toString() ?: ""
 }
 
 fun <T> forit(col : Iterable<T>, f : (Iterator<T>) -> Unit) {

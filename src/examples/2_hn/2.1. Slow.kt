@@ -10,11 +10,11 @@ fun main(args : Array<String>) {
         }
     }
 
-    println("Hello, $names!") // Groovy-style
+    println("Hello, $names!") // Groovy-style templates
 }
 
 val Array<*>.indices : Iterable<Int>
-get() = IntRange(0, size - 1)
+                get() = IntRange(0, size - 1)
 
 fun println(any : Any?) {
     System.out?.println(any);

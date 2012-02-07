@@ -1,9 +1,11 @@
 package ns.example
 
 fun main(args : Array<String>) {
-    val x = parseInt("123")
-    val y = parseInt("Hello")
-    //println(x?.times(2))  // Type mismatch: inferred type is Int? but Any was expected
+    val x = parseInt("1027")
+    val y = parseInt("Hello, World!")
+    println(x?.times(2))
+    // println(x?.times(y))     // y can't be nullable at this pos
+    println(x?.times(y.sure())) // throw NPE if y == null
     if (x != null) {
         println(x * 2)
     }
@@ -17,6 +19,6 @@ fun parseInt(str : String) : Int? {
     }
 }
 
-fun println(any : Any) {
+fun println(any : Any?) {
     System.out?.println(any);
 }
