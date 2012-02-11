@@ -4,7 +4,7 @@ import java.util.concurrent.locks.ReentrantLock
 import java.util.concurrent.locks.Lock
 
 fun main(args : Array<String>) {
-    val i1 = 1.abs()
+    println(1.abs())
     println(0.abs())
     println((-1).abs())
 

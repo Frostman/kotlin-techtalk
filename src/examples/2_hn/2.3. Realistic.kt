@@ -25,7 +25,3 @@ fun <T> forit(col : Iterable<T>, f : (Iterator<T>) -> Unit) {
 fun StringBuilder.plusAssign(any : Any?) {  // it should be Any because it.next() : <T>
     this.append(any)
 }
-
-fun println(any : Any?) {
-    System.out?.println(any);
-}

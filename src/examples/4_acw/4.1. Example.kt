@@ -29,15 +29,13 @@ fun foo(obj : Any?) {
 }
 
 fun bar(x : Int) {
-    val x : Any? = when (x) {
+    val v : Any? = when (x) {
         0 -> "Zero"
         1, 2, 3 -> "1, 2 or 3"
         x + 1 -> "Really strange"
         in 10..100 -> "In range"
         !in 100..1000 -> "Out of range"
+        else -> "Unknown"
     }
-}
-
-fun println(any : Any?) {
-    System.out?.println(any);
+    println(v);
 }

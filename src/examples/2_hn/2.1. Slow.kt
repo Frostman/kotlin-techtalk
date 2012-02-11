@@ -15,7 +15,3 @@ fun main(args : Array<String>) {
 
 val Array<*>.indices : Iterable<Int>
                 get() = IntRange(0, size - 1)
-
-fun println(any : Any?) {
-    System.out?.println(any);
-}
