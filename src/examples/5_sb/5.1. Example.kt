@@ -25,10 +25,6 @@ fun <T> lock(l : Lock, body : () -> T) : T {
     }
 }
 
-fun println(any : Any?) {
-    System.out?.println(any);
-}
-
 /*  =>
 
     @JetMethod(returnType="I", typeParameters="")
