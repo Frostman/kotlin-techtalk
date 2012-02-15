@@ -33,17 +33,22 @@ fun foo() {
 
 }
 
-fun dfs(graph : Graph) {
+fun reachable(from : Vertex, to : Vertex) : Boolean {
     val visited = HashSet<Vertex>()
 
     fun dfs(current : Vertex) {
+        // here we return from the outer function:
+        if (current == to) return@reachable true
+
+        // And here - from local function:
         if (!visited.add(current)) return
 
         for (v in current.neighbors)
             dfs(v)
     }
 
-    dfs(graph.vertices[0])
+    dfs(from)
+    return false // if dfs() did not return true already
 }
 
 class Graph() {
