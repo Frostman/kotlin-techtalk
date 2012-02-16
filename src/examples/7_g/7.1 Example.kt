@@ -1,7 +1,7 @@
 package g.example
 
 // there now raw-types in Kotlin
-
+/*
 class List<T> {
     fun add(t : T)
     fun get(idx : Int) : T
@@ -52,3 +52,4 @@ T.javaClass
 
 // Java types is still erased...
 foo is java.util.List<*>
+*/

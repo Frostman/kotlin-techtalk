@@ -18,10 +18,13 @@ fun foo(arg : String) : Boolean {
 fun test( arg1 : (p : Int) -> Int, arg2 : (Int) -> Int, arg3 : (Int)->Int ) {
 }
 
+/*
 fun <T> filter( c : Iterable<T>, f : (T) -> Boolean) : Iterable<T> {
     return
 }
+*/
 
+/*
 fun foo() {
     val list:Iterable<String> = ArrayList<String>();
 
@@ -32,6 +35,7 @@ fun foo() {
     filter(list) { it.length < 3 }
 
 }
+
 
 fun reachable(from : Vertex, to : Vertex) : Boolean {
     val visited = HashSet<Vertex>()
@@ -58,3 +62,4 @@ class Graph() {
 class Vertex() {
     val neighbors : Iterable<Vertex> =
 }
+*/
